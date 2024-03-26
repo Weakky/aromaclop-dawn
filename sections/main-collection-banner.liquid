@@ -2,6 +2,14 @@
 {{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
+
+  .aromaclop-collection-img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    object-fit: contain;
+  }
+
   @media screen and (max-width: 749px) {
     .collection-hero--with-image .collection-hero__inner {
       padding-bottom: calc({{ settings.media_shadow_vertical_offset | at_least: 0 }}px + 2rem);
@@ -17,12 +25,32 @@
         {{- collection.title | escape -}}
       </h1>
 
+      {%- if section.settings.show_collection_image and collection.image -%}
+      {% comment %} Put behind a comment because some collections have images that we likely don't want to display {% endcomment %}
+      {% comment %} I don't want to deal with this atm. Let's see later. {% endcomment %}
+      <img
+        class="aromaclop-collection-img"
+        srcset="
+          {%- if collection.image.width >= 165 -%}{{ collection.image | image_url: width: 165 }} 165w,{%- endif -%}
+          {%- if collection.image.width >= 360 -%}{{ collection.image | image_url: width: 360 }} 360w,{%- endif -%}
+          {%- if collection.image.width >= 535 -%}{{ collection.image | image_url: width: 535 }} 535w,{%- endif -%}
+          {%- if collection.image.width >= 750 -%}{{ collection.image | image_url: width: 750 }} 750w,{%- endif -%}
+          {%- if collection.image.width >= 1070 -%}{{ collection.image | image_url: width: 1070 }} 1070w,{%- endif -%}
+          {%- if collection.image.width >= 1500 -%}{{ collection.image | image_url: width: 1500 }} 1500w,{%- endif -%}
+          {{ collection.image | image_url }} {{ collection.image.width }}w"
+        src="{{ collection.image | image_url: width: 360 }}"
+        alt=""
+        width="{{ collection.image.width }}"
+        height="{{ collection.image.height }}"
+      >
+     {%- endif -%}
+
       {%- if section.settings.show_collection_description -%}
         <div class="collection-hero__description rte">{{ collection.description }}</div>
       {%- endif -%}
     </div>
 
-    {%- if section.settings.show_collection_image and collection.image -%}
+    {% comment %} {%- if section.settings.show_collection_image and collection.image -%}
       <div class="collection-hero__image-container media gradient">
         <img
           srcset="
@@ -41,7 +69,7 @@
           height="{{ collection.image.height }}"
         >
       </div>
-    {%- endif -%}
+    {%- endif -%} {% endcomment %}
   </div>
 </div>
 
