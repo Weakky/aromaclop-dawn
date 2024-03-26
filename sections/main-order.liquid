@@ -26,7 +26,7 @@
   </div>
 
   <div>
-    <div>
+    <div style="display: flex; flex-direction: column;">
       <h2>{{ 'customer.order.title' | t: name: order.name }}</h2>
       {%- assign order_date = order.created_at | time_tag: format: 'date_at_time' -%}
       <p>{{ 'customer.order.date_html' | t: date: order_date }}</p>
@@ -322,6 +322,23 @@
           </tr>
         </tfoot>
       </table>
+      <form style="margin: 0;">
+        {% assign _cart = "/cart/" %}
+        {% assign reorder_url = "" %}
+
+        {% for line_item in order.line_items %}
+          {%- capture reorder_url -%}
+            {{ reorder_url | append: _cart | append: line_item.variant_id | append: ':' | append: line_item.quantity | append: ',' | strip }}
+          {%- endcapture -%}
+        {% endfor %}
+        <button
+          class="product-form__submit button"
+          style=" width: 50%; float: right;"
+          formaction="{{ reorder_url | strip }}"
+        >
+          Racheter
+        </button>
+      </form>
     </div>
     <div>
       <div>

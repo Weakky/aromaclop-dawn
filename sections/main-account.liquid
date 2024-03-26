@@ -44,6 +44,7 @@
                   {{ 'customer.orders.fulfillment_status' | t }}
                 </th>
                 <th id="ColumnTotal" scope="col" role="columnheader">{{ 'customer.orders.total' | t }}</th>
+                <th id="ColumnReoder" scope="col" role="columnheader">Acheter à nouveau</th>
               </tr>
             </thead>
             <tbody role="rowgroup">
@@ -81,6 +82,26 @@
                   </td>
                   <td headers="RowOrder ColumnTotal" role="cell" data-label="{{ 'customer.orders.total' | t }}">
                     {{ order.total_net_amount | money_with_currency }}
+                  </td>
+                  <td headers="RowOrder ColumnReorder" role="cell" style="padding-top: 0.8rem;">
+                    {% assign _cart = "/cart/" %}
+                    {% assign reorder_url = "" %}
+
+                    {% for line_item in order.line_items %}
+                        {%- capture reorder_url -%}
+                          {{ reorder_url | append: _cart | append: line_item.variant_id | append: ':' | append: line_item.quantity | append: ',' | strip }}
+                        {%- endcapture -%}
+                      {% endfor %}
+
+                      <form style="margin: 0;">
+                        <button
+                          class="button--secondary"
+                          style="margin: 0;"
+                          type="submit"
+                          formaction="{{ reorder_url | strip }}">
+                          Racheter
+                        </button>
+                      </form>
                   </td>
                 </tr>
               {%- endfor -%}
