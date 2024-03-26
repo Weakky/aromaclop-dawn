@@ -339,7 +339,7 @@
 }
 
 .banner__box {
-  padding: 4rem 3.5rem;
+  padding: 1rem 1rem;
   position: relative;
   height: fit-content;
   align-items: center;
@@ -347,6 +347,11 @@
   width: 100%;
   word-wrap: break-word;
   z-index: 1;
+  border-radius: 10px;
+  opacity: 90%;
+  box-shadow: 6px 5px 25px 1px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 6px 5px 25px 1px rgba(0,0,0,0.6);
+  -moz-box-shadow: 6px 5px 25px 1px rgba(0,0,0,0.6);
 }
 
 @media screen and (min-width: 750px) {
@@ -414,7 +419,7 @@
   .banner__box {
     width: auto;
     max-width: 71rem;
-    min-width: 45rem;
+    min-width: 34rem;
   }
 }
 
