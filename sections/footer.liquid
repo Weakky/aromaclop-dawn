@@ -229,7 +229,6 @@
               {%- endform -%}
             </div>
           {%- endif -%}
-
           {%- if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
             <div class="footer__follow-on-shop">
               {% comment %} TODO: enable theme-check once `login_button` is accepted as valid filter {% endcomment %}
@@ -299,20 +298,15 @@
         <small class="copyright__content"
           >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
         </small>
-        <small class="copyright__content">{{ powered_by_link }}</small>
-        {%- if section.settings.show_policy -%}
           <ul class="policies list-unstyled">
-            {%- for policy in shop.policies -%}
-              {%- if policy != blank -%}
+            {%- for link in section.settings.additional_links.links -%}
                 <li>
-                  <small class="copyright__content"
-                    ><a href="{{ policy.url }}">{{ policy.title }}</a></small
-                  >
+                  <small class="copyright__content">
+                    <a href="{{ link.url }}">{{ link.title }}</a>
+                  </small>
                 </li>
-              {%- endif -%}
             {%- endfor -%}
           </ul>
-        {%- endif -%}
       </div>
     </div>
   </div>
@@ -509,12 +503,6 @@
       "info": "t:sections.footer.settings.header__8.info"
     },
     {
-      "type": "checkbox",
-      "id": "show_policy",
-      "default": false,
-      "label": "t:sections.footer.settings.show_policy.label"
-    },
-    {
       "type": "header",
       "content": "t:sections.all.spacing"
     },
@@ -551,6 +539,11 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "link_list",
+      "label": "Liens additionels (petits)",
+      "id": "additional_links"
     }
   ],
   "default": {
