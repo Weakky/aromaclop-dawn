@@ -1,1 +1,144 @@
-{"sections":{"main":{"type":"main-product","blocks":{"vendor":{"type":"text","settings":{"text":"{{ product.vendor }}","text_style":"uppercase"}},"title":{"type":"title","settings":{}},"price":{"type":"price","settings":{}},"variant_picker":{"type":"variant_picker","settings":{"picker_type":"button"}},"quantity_selector":{"type":"quantity_selector","settings":{}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":true,"show_gift_card_recipient":false}},"text_Je6Nby":{"type":"text","settings":{"text":"<strong>🔞 Si vous ne fumez pas, ne vapotez pas.<\/strong>","text_style":"body"}},"description":{"type":"description","settings":{}},"4e3b279a-6aeb-4d9a-b98f-87c6ce8d1046":{"type":"complementary","settings":{"block_heading":"Produits associés","make_collapsible_row":false,"icon":"price_tag","product_list_limit":4,"products_per_page":2,"pagination_style":"counter","image_ratio":"square","enable_quick_add":true}},"share":{"type":"share","settings":{"share_label":"Share"}}},"block_order":["vendor","title","price","variant_picker","quantity_selector","buy_buttons","text_Je6Nby","description","4e3b279a-6aeb-4d9a-b98f-87c6ce8d1046","share"],"settings":{"enable_sticky_info":true,"media_size":"large","constrain_to_viewport":true,"media_fit":"contain","gallery_layout":"stacked","media_position":"left","image_zoom":"lightbox","mobile_thumbnails":"hide","hide_variants":true,"enable_video_looping":false,"padding_top":36,"padding_bottom":12}},"1928a47c-71fe-41e7-bafe-0e1389f2eabe":{"type":"multicolumn","blocks":{"template--18900911227217__1928a47c-71fe-41e7-bafe-0e1389f2eabe-1683470990b382228d-2":{"type":"column","settings":{"title":"Marque","text":"<p>{{ product.vendor }}<\/p>","link_label":"","link":""}},"9fec83df-4705-4ce8-ac71-f69c4dbb3a00":{"type":"column","settings":{"title":"Dimensions","text":"<p>Hauteur: {{ product.metafields.custom.hauteur.value }}mm<\/p><p>Profondeur: {{ product.metafields.custom.profondeur.value }}mm<\/p><p>Largeur: {{ product.metafields.custom.largeur.value }}mm<\/p>","link_label":"","link":""}},"673ea828-1a89-4d66-b43b-81dc63104ff1":{"type":"column","settings":{"title":"Puissance","text":"<p>{{ product.metafields.custom.puissance.value }}W<\/p>","link_label":"","link":""}},"7a747c47-ffdd-46bd-8183-2ef7212bfd07":{"type":"column","settings":{"title":"Format d'accus","text":"<p>{{ product.metafields.custom.nombre_d_accus.value }} x {{ product.metafields.custom.type_d_accu.value }}<\/p>","link_label":"","link":""}},"e4596bb8-66a0-442d-85f2-adc112f26702":{"type":"column","settings":{"title":"Poids","text":"","link_label":"","link":""}}},"block_order":["template--18900911227217__1928a47c-71fe-41e7-bafe-0e1389f2eabe-1683470990b382228d-2","9fec83df-4705-4ce8-ac71-f69c4dbb3a00","673ea828-1a89-4d66-b43b-81dc63104ff1","7a747c47-ffdd-46bd-8183-2ef7212bfd07","e4596bb8-66a0-442d-85f2-adc112f26702"],"settings":{"title":"Caractéristiques","heading_size":"h2","image_width":"third","image_ratio":"adapt","columns_desktop":4,"column_alignment":"left","background_style":"primary","button_label":"","button_link":"","color_scheme":"background-1","columns_mobile":"1","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36}},"related-products":{"type":"related-products","settings":{"heading":"Vous aimerez peut-être également","heading_size":"h2","products_to_show":4,"columns_desktop":4,"color_scheme":"background-1","image_ratio":"square","show_secondary_image":true,"show_vendor":true,"show_rating":false,"columns_mobile":"2","padding_top":36,"padding_bottom":28}}},"order":["main","1928a47c-71fe-41e7-bafe-0e1389f2eabe","related-products"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": { "type": "text", "settings": { "text": "{{ product.vendor }}", "text_style": "uppercase" } },
+        "title": { "type": "title", "settings": {} },
+        "price": { "type": "price", "settings": {} },
+        "variant_picker": { "type": "variant_picker", "settings": { "picker_type": "button" } },
+        "quantity_selector": { "type": "quantity_selector", "settings": {} },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": { "show_dynamic_checkout": true, "show_gift_card_recipient": false }
+        },
+        "text_Je6Nby": {
+          "type": "text",
+          "settings": { "text": "<strong>🔞 Si vous ne fumez pas, ne vapotez pas.</strong>", "text_style": "body" }
+        },
+        "description": { "type": "description", "settings": {} },
+        "4e3b279a-6aeb-4d9a-b98f-87c6ce8d1046": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Produits associés",
+            "make_collapsible_row": false,
+            "icon": "price_tag",
+            "product_list_limit": 4,
+            "products_per_page": 2,
+            "pagination_style": "counter",
+            "image_ratio": "square",
+            "enable_quick_add": true
+          }
+        },
+        "share": { "type": "share", "settings": { "share_label": "Share" } }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "text_Je6Nby",
+        "description",
+        "4e3b279a-6aeb-4d9a-b98f-87c6ce8d1046",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "1928a47c-71fe-41e7-bafe-0e1389f2eabe": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--18900911227217__1928a47c-71fe-41e7-bafe-0e1389f2eabe-1683470990b382228d-2": {
+          "type": "column",
+          "settings": { "title": "Marque", "text": "<p>{{ product.vendor }}</p>", "link_label": "", "link": "" }
+        },
+        "9fec83df-4705-4ce8-ac71-f69c4dbb3a00": {
+          "type": "column",
+          "settings": {
+            "title": "Dimensions",
+            "text": "<p>Hauteur: {{ product.metafields.custom.hauteur.value }}mm</p><p>Profondeur: {{ product.metafields.custom.profondeur.value }}mm</p><p>Largeur: {{ product.metafields.custom.largeur.value }}mm</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "673ea828-1a89-4d66-b43b-81dc63104ff1": {
+          "type": "column",
+          "settings": {
+            "title": "Puissance",
+            "text": "<p>{{ product.metafields.custom.puissance.value }}W</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "7a747c47-ffdd-46bd-8183-2ef7212bfd07": {
+          "type": "column",
+          "settings": {
+            "title": "Format d'accus",
+            "text": "<p>{{ product.metafields.custom.nombre_d_accus.value }} x {{ product.metafields.custom.type_d_accu.value }}</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "e4596bb8-66a0-442d-85f2-adc112f26702": {
+          "type": "column",
+          "settings": { "title": "Poids", "text": "", "link_label": "", "link": "" }
+        }
+      },
+      "block_order": [
+        "template--18900911227217__1928a47c-71fe-41e7-bafe-0e1389f2eabe-1683470990b382228d-2",
+        "9fec83df-4705-4ce8-ac71-f69c4dbb3a00",
+        "673ea828-1a89-4d66-b43b-81dc63104ff1",
+        "7a747c47-ffdd-46bd-8183-2ef7212bfd07",
+        "e4596bb8-66a0-442d-85f2-adc112f26702"
+      ],
+      "settings": {
+        "title": "Caractéristiques",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "Vous aimerez peut-être également",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": ["main", "1928a47c-71fe-41e7-bafe-0e1389f2eabe", "related-products"]
+}
