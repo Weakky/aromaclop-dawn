@@ -1,0 +1,42 @@
+{% comment %}
+  Renders buy order button.
+  Accepts:
+  - order: {Object} order object.
+  - class: {String} additional classes for the button.
+  - style: {String} additional styles for the button.
+
+  Usage:
+  <script src="{{ 'buy_order.js' | asset_url }}" defer="defer"></script>
+  {% render 'buy-order-button', order: order, class: "button button--secondary", style: "" %}
+{% endcomment %}
+
+{% assign order_ids = order.line_items | map: 'variant_id' %}
+{% assign order_quantities = order.line_items | map: 'quantity' %}
+{% assign button_id = order.id %}
+
+<button
+  id="{{ button_id }}"
+  class="{{ class }}"
+  style="{{ style }}"
+  type="submit"
+  onclick="
+    buy_order(
+      {{ order_ids | json }},
+      {{ order_quantities | json }},
+      {{ button_id | json }}
+    )
+  "
+>
+  Racheter
+  <div class="loading-overlay__spinner hidden">
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      class="spinner"
+      viewBox="0 0 66 66"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+    </svg>
+  </div>
+</button>

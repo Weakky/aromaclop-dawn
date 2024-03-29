@@ -14,6 +14,7 @@
   }
 {%- endstyle -%}
 
+<script src="{{ 'buy_order.js' | asset_url }}" defer="defer"></script>
 <div class="customer account section-{{ section.id }}-padding">
   <div>
     <h1 class="customer__title">{{ 'customer.account.title' | t }}</h1>
@@ -84,23 +85,7 @@
                     {{ order.total_net_amount | money_with_currency }}
                   </td>
                   <td headers="RowOrder ColumnReorder" role="cell" style="padding-top: 0.8rem;">
-                    {% assign reorder_url = "" %}
-
-                    {% for line_item in order.line_items %}
-                        {%- capture reorder_url -%}
-                          {{ reorder_url | append: line_item.variant_id | append: ':' | append: line_item.quantity | append: ',' | strip }}
-                        {%- endcapture -%}
-                      {% endfor %}
-
-                      <form style="margin: 0;">
-                        <button
-                          class="button--secondary"
-                          style="margin: 0;"
-                          type="submit"
-                          formaction="/cart/{{ reorder_url | strip }}">
-                          Racheter
-                        </button>
-                      </form>
+                    {% render 'buy-order-button', order: order, class: "button button--secondary", style: "margin: 0;" %}
                   </td>
                 </tr>
               {%- endfor -%}

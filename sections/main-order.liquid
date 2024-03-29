@@ -14,6 +14,8 @@
   }
 {%- endstyle -%}
 
+<script src="{{ 'buy_order.js' | asset_url }}" defer="defer"></script>
+
 <div class="customer order section-{{ section.id }}-padding">
   <svg style="display:none">
     <symbol id="icon-discount" viewBox="0 0 12 12">
@@ -322,23 +324,9 @@
           </tr>
         </tfoot>
       </table>
-      <form style="margin: 0;">
-        {% assign reorder_url = "" %}
-
-        {% for line_item in order.line_items %}
-            {%- capture reorder_url -%}
-              {{ reorder_url | append: line_item.variant_id | append: ':' | append: line_item.quantity | append: ',' | strip }}
-            {%- endcapture -%}
-          {% endfor %}
-
-        <button
-          class="product-form__submit button"
-          style=" width: 50%; float: right;"
-          formaction="/cart/{{ reorder_url | strip }}"
-        >
-          Racheter
-        </button>
-      </form>
+      <div>
+        {% render 'buy-order-button', order: order, class: "product-form__submit button", style: "width: 50%; float: right;" %}
+      </div>
     </div>
     <div>
       <div>
