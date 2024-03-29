@@ -33,31 +33,63 @@
                 <ul
                   class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}"
                   role="list"
+                  style="{% if link.links.size > 1 %} grid-template-columns: repeat({{ link.links.size }}, minmax(0, 1fr)); {% endif %}"
                 >
                   {%- for childlink in link.links -%}
                     <li>
                       <a
                         id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
                         href="{{ childlink.url }}"
-                        class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"
+                        class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %} aromaclop-menu-item"
                         {% if childlink.current %}
                           aria-current="page"
                         {% endif %}
                       >
+                        {% if childlink.type == 'collection_link' %}
+                          {% assign collection = childlink.object %}
+                          {% if collection.image != null %}
+                            <img
+                              class="aromaclop-menu-image"
+                              src="{{ collection.image | image_url: width: 200 }}"
+                              alt=""
+                              height="{{ collection.image.height }}"
+                              width="{{ collection.image.width }}"
+                              loading="lazy"
+                              class="motion-reduce"
+                            >
+                          {% endif %}
+                        {% endif %}
                         {{ childlink.title | escape }}
                       </a>
                       {%- if childlink.links != blank -%}
-                        <ul class="list-unstyled" role="list">
+                        <ul
+                          class="list-unstyled {% if childlink.links.size >= 4 %} aromaclop-list {% endif %}"
+                          role="list"
+                        >
                           {%- for grandchildlink in childlink.links -%}
                             <li>
                               <a
                                 id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"
                                 href="{{ grandchildlink.url }}"
-                                class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"
+                                class="aromaclop-menu-item mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"
                                 {% if grandchildlink.current %}
                                   aria-current="page"
                                 {% endif %}
                               >
+                                {% if grandchildlink.type == 'collection_link' %}
+                                  {% assign collection = grandchildlink.object %}
+                                  {% if collection.image != null %}
+                                    <img
+                                      class="aromaclop-menu-image"
+                                      src="{{ collection.image | image_url: width: 200 }}"
+                                      alt=""
+                                      height="{{ collection.image.height }}"
+                                      width="{{ collection.image.width }}"
+                                      loading="lazy"
+                                      class="motion-reduce"
+                                    >
+                                  {% endif %}
+                                {% endif %}
                                 {{ grandchildlink.title | escape }}
                               </a>
                             </li>
@@ -92,3 +124,44 @@
     {%- endfor -%}
   </ul>
 </nav>
+
+<script>
+  let items = document.querySelectorAll('.mega-menu');
+  let header = document.querySelector('header');
+  let currentItemIndex;
+
+  items.forEach((item, itemIndex) => {
+    const content = item.querySelector('.mega-menu__content');
+    item.addEventListener('mouseover', () => {
+      if (
+        (currentItemIndex === 0 && currentItemIndex !== itemIndex) ||
+        (currentItemIndex && currentItemIndex !== itemIndex)
+      ) {
+        items[currentItemIndex].removeAttribute('open');
+      }
+
+      currentItemIndex = itemIndex;
+      item.setAttribute('open', true);
+    });
+
+    item.addEventListener('mouseleave', (event) => {
+      let close = true;
+
+      const closeTimeout = setTimeout(() => {
+        if (close) item.removeAttribute('open');
+      }, 500);
+
+      content.addEventListener('mouseover', () => {
+        close = false;
+      });
+
+      item.addEventListener('mouseover', () => {
+        clearTimeout(closeTimeout);
+      });
+    });
+
+    content.addEventListener('mouseleave', () => {
+      item.removeAttribute('open');
+    });
+  });
+</script>
