@@ -6,12 +6,12 @@
         "slide_gYtjHr": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/lostvape_thelemasolo_retrogaming_en.jpg",
+            "image": "shopify:\/\/shop_images\/lostvape_thelemasolo_retrogaming_en.jpg",
             "heading": "Nouveautés Lost Vape",
             "heading_size": "h2",
             "subheading": "",
             "button_label": "Voir plus",
-            "link": "shopify://collections/alfaliquid",
+            "link": "shopify:\/\/collections\/alfaliquid",
             "button_style_secondary": true,
             "box_align": "bottom-center",
             "show_text_box": true,
@@ -22,7 +22,9 @@
           }
         }
       },
-      "block_order": ["slide_gYtjHr"],
+      "block_order": [
+        "slide_gYtjHr"
+      ],
       "disabled": true,
       "settings": {
         "layout": "grid",
@@ -49,7 +51,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Nos produits",
-            "button_link_1": "shopify://collections/all",
+            "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -57,11 +59,14 @@
           }
         }
       },
-      "block_order": ["heading", "button"],
+      "block_order": [
+        "heading",
+        "button"
+      ],
       "disabled": true,
       "settings": {
-        "image": "shopify://shop_images/aromaclop-logo.png",
-        "image_2": "shopify://shop_images/banniere-avertissement-min.png",
+        "image": "shopify:\/\/shop_images\/aromaclop-logo.png",
+        "image_2": "shopify:\/\/shop_images\/banniere-avertissement-min.png",
         "image_overlay_opacity": 40,
         "image_height": "adapt",
         "desktop_content_position": "bottom-center",
@@ -79,27 +84,39 @@
       "blocks": {
         "template--18900911063377__40a20d1e-dcd8-497b-84c0-65f6fce5a58d-16839061395b96304d-0": {
           "type": "featured_collection",
-          "settings": { "collection": "classic" }
+          "settings": {
+            "collection": "classic"
+          }
         },
         "template--18900911063377__40a20d1e-dcd8-497b-84c0-65f6fce5a58d-16839061395b96304d-1": {
           "type": "featured_collection",
-          "settings": { "collection": "menthe" }
+          "settings": {
+            "collection": "menthe"
+          }
         },
         "template--18900911063377__40a20d1e-dcd8-497b-84c0-65f6fce5a58d-16839061395b96304d-2": {
           "type": "featured_collection",
-          "settings": { "collection": "fruites" }
+          "settings": {
+            "collection": "fruites"
+          }
         },
         "49372c9b-e19d-4d35-b2a6-d0a70bdc9702": {
           "type": "featured_collection",
-          "settings": { "collection": "gourmand" }
+          "settings": {
+            "collection": "gourmand"
+          }
         },
         "featured_collection_tRWUyz": {
           "type": "featured_collection",
-          "settings": { "collection": "fruites-mentholes" }
+          "settings": {
+            "collection": "fruites-mentholes"
+          }
         },
         "featured_collection_LU9WK8": {
           "type": "featured_collection",
-          "settings": { "collection": "sels-de-nicotine" }
+          "settings": {
+            "collection": "sels-de-nicotine"
+          }
         }
       },
       "block_order": [
@@ -143,7 +160,6 @@
         "show_secondary_image": true,
         "show_vendor": true,
         "show_rating": false,
-        "enable_quick_add": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 44,
@@ -170,7 +186,6 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -198,7 +213,6 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
