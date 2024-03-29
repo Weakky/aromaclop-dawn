@@ -15,18 +15,17 @@
           }
         }
       },
-      "block_order": ["announcement-bar-0"],
-      "settings": {}
+      "block_order": ["announcement-bar-0"]
     },
     "header": {
       "type": "header",
       "settings": {
+        "color_scheme": "scheme-1",
         "logo_position": "middle-left",
         "menu": "main-menu",
         "menu_type_desktop": "mega",
         "sticky_header_type": "reduce-logo-size",
         "show_line_separator": true,
-        "color_scheme": "background-1",
         "enable_country_selector": false,
         "enable_language_selector": false,
         "mobile_logo_position": "center",
