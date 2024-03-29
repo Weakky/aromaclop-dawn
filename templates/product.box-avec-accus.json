@@ -3,20 +3,42 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": { "type": "text", "settings": { "text": "{{ product.vendor }}", "text_style": "uppercase" } },
-        "title": { "type": "title", "settings": {} },
-        "price": { "type": "price", "settings": {} },
-        "variant_picker": { "type": "variant_picker", "settings": { "picker_type": "button" } },
-        "quantity_selector": { "type": "quantity_selector", "settings": {} },
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
-          "settings": { "show_dynamic_checkout": true, "show_gift_card_recipient": false }
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
         },
-        "text_Je6Nby": {
-          "type": "text",
-          "settings": { "text": "<strong>🔞 Si vous ne fumez pas, ne vapotez pas.</strong>", "text_style": "body" }
-        },
-        "description": { "type": "description", "settings": {} },
         "4e3b279a-6aeb-4d9a-b98f-87c6ce8d1046": {
           "type": "complementary",
           "settings": {
@@ -30,7 +52,24 @@
             "enable_quick_add": true
           }
         },
-        "share": { "type": "share", "settings": { "share_label": "Share" } }
+        "text_Je6Nby": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>🔞 Si vous ne fumez pas, ne vapotez pas.<\/strong>",
+            "text_style": "body"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
       },
       "block_order": [
         "vendor",
@@ -39,13 +78,14 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "4e3b279a-6aeb-4d9a-b98f-87c6ce8d1046",
         "text_Je6Nby",
         "description",
-        "4e3b279a-6aeb-4d9a-b98f-87c6ce8d1046",
         "share"
       ],
       "settings": {
         "enable_sticky_info": true,
+        "color_scheme": "",
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
@@ -64,13 +104,18 @@
       "blocks": {
         "template--18900911227217__1928a47c-71fe-41e7-bafe-0e1389f2eabe-1683470990b382228d-2": {
           "type": "column",
-          "settings": { "title": "Marque", "text": "<p>{{ product.vendor }}</p>", "link_label": "", "link": "" }
+          "settings": {
+            "title": "Marque",
+            "text": "<p>{{ product.vendor }}<\/p>",
+            "link_label": "",
+            "link": ""
+          }
         },
         "9fec83df-4705-4ce8-ac71-f69c4dbb3a00": {
           "type": "column",
           "settings": {
             "title": "Dimensions",
-            "text": "<p>Hauteur: {{ product.metafields.custom.hauteur.value }}mm</p><p>Profondeur: {{ product.metafields.custom.profondeur.value }}mm</p><p>Largeur: {{ product.metafields.custom.largeur.value }}mm</p>",
+            "text": "<p>Hauteur: {{ product.metafields.custom.hauteur.value }}mm<\/p><p>Profondeur: {{ product.metafields.custom.profondeur.value }}mm<\/p><p>Largeur: {{ product.metafields.custom.largeur.value }}mm<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -79,7 +124,7 @@
           "type": "column",
           "settings": {
             "title": "Puissance",
-            "text": "<p>{{ product.metafields.custom.puissance.value }}W</p>",
+            "text": "<p>{{ product.metafields.custom.puissance.value }}W<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -88,14 +133,19 @@
           "type": "column",
           "settings": {
             "title": "Format d'accus",
-            "text": "<p>{{ product.metafields.custom.nombre_d_accus.value }} x {{ product.metafields.custom.type_d_accu.value }}</p>",
+            "text": "<p>{{ product.metafields.custom.nombre_d_accus.value }} x {{ product.metafields.custom.type_d_accu.value }}<\/p>",
             "link_label": "",
             "link": ""
           }
         },
         "e4596bb8-66a0-442d-85f2-adc112f26702": {
           "type": "column",
-          "settings": { "title": "Poids", "text": "", "link_label": "", "link": "" }
+          "settings": {
+            "title": "Poids",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -131,6 +181,7 @@
         "columns_desktop": 4,
         "color_scheme": "background-1",
         "image_ratio": "square",
+        "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": true,
         "show_rating": false,
@@ -140,5 +191,9 @@
       }
     }
   },
-  "order": ["main", "1928a47c-71fe-41e7-bafe-0e1389f2eabe", "related-products"]
+  "order": [
+    "main",
+    "1928a47c-71fe-41e7-bafe-0e1389f2eabe",
+    "related-products"
+  ]
 }
