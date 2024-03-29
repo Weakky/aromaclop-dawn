@@ -13,10 +13,13 @@
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
+        "color_scheme": "",
         "image_ratio": "square",
+        "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": true,
         "show_rating": false,
+        "quick_add": "standard",
         "enable_filtering": true,
         "filter_type": "vertical",
         "enable_sorting": true,
