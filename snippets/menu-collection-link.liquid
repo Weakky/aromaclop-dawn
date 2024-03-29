@@ -1,0 +1,24 @@
+{% comment %}
+  Renders an image in the header menu
+
+  Accepts:
+  - link: {CollectionLink} Link pointing to a collection
+
+  Usage:
+  {% render 'header-search', input_id: 'My-Id'%}
+{% endcomment %}
+
+{% if link.type == 'collection_link' %}
+  {% assign collection = link.object %}
+  {% if collection.image != null %}
+    <img
+      class="aromaclop-menu-image"
+      src="{{ collection.image | image_url: width: 200 }}"
+      alt=""
+      height="{{ collection.image.height }}"
+      width="{{ collection.image.width }}"
+      loading="lazy"
+      class="motion-reduce"
+    >
+  {% endif %}
+{% endif %}
