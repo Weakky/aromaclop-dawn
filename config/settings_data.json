@@ -114,6 +114,7 @@
     "show_cart_note": true,
     "cart_drawer_collection": "top-ventes",
     "checkout_logo_image": "shopify:\/\/shop_images\/aromaclop-logo.png",
+    "checkout_input_background_color_mode": "white",
     "presets": {
       "Default": {
         "badge_corner_radius": 40,
