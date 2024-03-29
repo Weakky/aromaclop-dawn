@@ -8,24 +8,14 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Livraison gratuite à partir de 50€, profitez-en!",
-            "text_alignment": "center",
-            "color_scheme": "accent-1",
-            "link": ""
-          }
-        },
-        "ebffa8c2-0fd5-4d28-9429-189c44ca57cc": {
-          "type": "announcement",
-          "disabled": true,
-          "settings": {
-            "text": "Welcome to our store",
+            "text": "Livraison gratuite à partir de 50€",
             "text_alignment": "center",
             "color_scheme": "accent-1",
             "link": ""
           }
         }
       },
-      "block_order": ["announcement-bar-0", "ebffa8c2-0fd5-4d28-9429-189c44ca57cc"],
+      "block_order": ["announcement-bar-0"],
       "settings": {}
     },
     "header": {
