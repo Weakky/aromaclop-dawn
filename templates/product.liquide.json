@@ -3,21 +3,59 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": { "type": "text", "settings": { "text": "{{ product.vendor }}", "text_style": "uppercase" } },
-        "title": { "type": "title", "settings": {} },
-        "price": { "type": "price", "settings": {} },
-        "variant_picker": { "type": "variant_picker", "settings": { "picker_type": "button" } },
-        "quantity_selector": { "type": "quantity_selector", "settings": {} },
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
-          "settings": { "show_dynamic_checkout": true, "show_gift_card_recipient": false }
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
         },
         "text_n96iP3": {
           "type": "text",
-          "settings": { "text": "<strong>🔞 Si vous ne fumez pas, ne vapotez pas.</strong>", "text_style": "body" }
+          "settings": {
+            "text": "<strong>🔞 Si vous ne fumez pas, ne vapotez pas.<\/strong>",
+            "text_style": "body"
+          }
         },
-        "description": { "type": "description", "settings": {} },
-        "share": { "type": "share", "settings": { "share_label": "Partager" } }
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Partager"
+          }
+        }
       },
       "block_order": [
         "vendor",
@@ -50,7 +88,12 @@
       "blocks": {
         "template--18900911227217__1928a47c-71fe-41e7-bafe-0e1389f2eabe-1683470990b382228d-2": {
           "type": "column",
-          "settings": { "title": "Marque", "text": "<p>{{ product.vendor }}</p>", "link_label": "", "link": "" }
+          "settings": {
+            "title": "Marque",
+            "text": "<p>{{ product.vendor }}<\/p>",
+            "link_label": "",
+            "link": ""
+          }
         },
         "template--18900911227217__1928a47c-71fe-41e7-bafe-0e1389f2eabe-1683470990b382228d-1": {
           "type": "column",
@@ -65,7 +108,7 @@
           "type": "column",
           "settings": {
             "title": "Contenance",
-            "text": "<p>{{ product.metafields.custom.contenance.value }}</p>",
+            "text": "<p>{{ product.metafields.custom.contenance.value }}<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -129,5 +172,10 @@
       }
     }
   },
-  "order": ["main", "1928a47c-71fe-41e7-bafe-0e1389f2eabe", "related-products", "c483a677-413c-4aad-9372-bcaa1575c912"]
+  "order": [
+    "main",
+    "1928a47c-71fe-41e7-bafe-0e1389f2eabe",
+    "related-products",
+    "c483a677-413c-4aad-9372-bcaa1575c912"
+  ]
 }
