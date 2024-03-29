@@ -154,5 +154,9 @@
       }
     }
   },
-  "order": ["main", "1928a47c-71fe-41e7-bafe-0e1389f2eabe", "related-products"]
+  "order": [
+    "main",
+    "1928a47c-71fe-41e7-bafe-0e1389f2eabe",
+    "related-products"
+  ]
 }

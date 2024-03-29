@@ -92,7 +92,7 @@
           "type": "column",
           "settings": {
             "title": "Marque",
-            "text": "<p>{{ product.vendor }}</p>",
+            "text": "<p>{{ product.vendor }}<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -157,5 +157,9 @@
       }
     }
   },
-  "order": ["main", "1928a47c-71fe-41e7-bafe-0e1389f2eabe", "related-products"]
+  "order": [
+    "main",
+    "1928a47c-71fe-41e7-bafe-0e1389f2eabe",
+    "related-products"
+  ]
 }
