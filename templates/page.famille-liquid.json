@@ -28,15 +28,36 @@
           "settings": {
             "collection": "fruites"
           }
+        },
+        "featured_collection_6QTkyn": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "fruites-mentholes"
+          }
+        },
+        "featured_collection_LmLhpe": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "gourmand"
+          }
+        },
+        "featured_collection_h9HQqf": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sels-de-nicotine"
+          }
         }
       },
       "block_order": [
         "featured_collection_TD3Pkq",
         "featured_collection_dD7jmA",
-        "featured_collection_Mwewzm"
+        "featured_collection_Mwewzm",
+        "featured_collection_6QTkyn",
+        "featured_collection_LmLhpe",
+        "featured_collection_h9HQqf"
       ],
       "settings": {
-        "title": "Nos famille de liquides",
+        "title": "Nos familles de liquide",
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 6,
