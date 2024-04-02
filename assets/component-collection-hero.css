@@ -42,6 +42,7 @@
 
 .collection-hero__title {
   margin: 2.5rem 0;
+  text-transform: uppercase;
 }
 
 .collection-hero__title + .collection-hero__description {
