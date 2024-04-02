@@ -39,6 +39,19 @@
             "show_gift_card_recipient": false
           }
         },
+        "complementary_Bn7KFK": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Produits associés",
+            "make_collapsible_row": false,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 1,
+            "pagination_style": "counter",
+            "image_ratio": "square",
+            "enable_quick_add": false
+          }
+        },
         "text_n96iP3": {
           "type": "text",
           "settings": {
@@ -65,6 +78,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "complementary_Bn7KFK",
         "text_n96iP3",
         "description",
         "share"
@@ -92,7 +106,7 @@
           "type": "column",
           "settings": {
             "title": "Marque",
-            "text": "<p>{{ product.vendor }}</p>",
+            "text": "<p>{{ product.vendor }}<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -157,5 +171,9 @@
       }
     }
   },
-  "order": ["main", "1928a47c-71fe-41e7-bafe-0e1389f2eabe", "related-products"]
+  "order": [
+    "main",
+    "1928a47c-71fe-41e7-bafe-0e1389f2eabe",
+    "related-products"
+  ]
 }
