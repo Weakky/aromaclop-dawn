@@ -341,12 +341,6 @@
         "settings": {
         }
       },
-      "6174324309569838175": {
-        "type": "shopify:\/\/apps\/smile-loyalty-rewards\/blocks\/smile-shopify-app\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
-        "disabled": true,
-        "settings": {
-        }
-      },
       "9450951229966589494": {
         "type": "shopify:\/\/apps\/avp-age-verification\/blocks\/app-embed\/0b530eb8-f19c-4a9b-87d4-bf625c71dec9",
         "disabled": false,
