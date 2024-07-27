@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Livraison gratuite à partir de 50€",
+            "text": "paiement en panne veuillez nous joindre au 06.14.58.42.79",
             "link": ""
           }
         }
@@ -25,7 +25,6 @@
       "block_order": [
         "announcement-bar-0"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "scheme-4",
         "show_line_separator": true,
