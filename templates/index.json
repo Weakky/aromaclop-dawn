@@ -1,27 +1,57 @@
 {
   "sections": {
+    "slideshow_qaGxF7": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_gYtjHr": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lostvape_thelemasolo_retrogaming_en.jpg",
+            "heading": "Nouveautés Lost Vape",
+            "heading_size": "h2",
+            "subheading": "",
+            "button_label": "Voir plus",
+            "link": "shopify:\/\/collections\/alfaliquid",
+            "button_style_secondary": true,
+            "box_align": "bottom-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_gYtjHr"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "grid",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": ""
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Bienvenue chez Aromaclop",
             "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
+            "button_label_1": "Nos produits",
+            "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -31,180 +61,177 @@
       },
       "block_order": [
         "heading",
-        "text",
         "button"
       ],
+      "disabled": true,
       "settings": {
+        "image": "shopify:\/\/shop_images\/aromaclop-logo.png",
+        "image_2": "shopify:\/\/shop_images\/banniere-avertissement-min.png",
         "image_overlay_opacity": 40,
-        "image_height": "large",
+        "image_height": "adapt",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
     },
-    "rich_text": {
-      "type": "rich-text",
+    "40a20d1e-dcd8-497b-84c0-65f6fce5a58d": {
+      "type": "collection-list",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "template--18900911063377__40a20d1e-dcd8-497b-84c0-65f6fce5a58d-16839061395b96304d-0": {
+          "type": "featured_collection",
           "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
+            "collection": "classic"
           }
         },
-        "text": {
-          "type": "text",
+        "template--18900911063377__40a20d1e-dcd8-497b-84c0-65f6fce5a58d-16839061395b96304d-1": {
+          "type": "featured_collection",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "collection": "menthe"
+          }
+        },
+        "template--18900911063377__40a20d1e-dcd8-497b-84c0-65f6fce5a58d-16839061395b96304d-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "fruites"
+          }
+        },
+        "49372c9b-e19d-4d35-b2a6-d0a70bdc9702": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "gourmand"
+          }
+        },
+        "featured_collection_tRWUyz": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "fruites-mentholes"
+          }
+        },
+        "featured_collection_LU9WK8": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sels-de-nicotine"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "template--18900911063377__40a20d1e-dcd8-497b-84c0-65f6fce5a58d-16839061395b96304d-0",
+        "template--18900911063377__40a20d1e-dcd8-497b-84c0-65f6fce5a58d-16839061395b96304d-1",
+        "template--18900911063377__40a20d1e-dcd8-497b-84c0-65f6fce5a58d-16839061395b96304d-2",
+        "49372c9b-e19d-4d35-b2a6-d0a70bdc9702",
+        "featured_collection_tRWUyz",
+        "featured_collection_LU9WK8"
       ],
       "settings": {
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 40,
+        "title": "NOS LIQUIDES",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 6,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
         "padding_bottom": 0
       }
     },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
+        "title": "TOP VENTES",
         "heading_size": "h2",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "show_view_all": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "top-ventes",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "outline",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
         "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 28,
+        "padding_bottom": 4
+      }
+    },
+    "7179fa21-acea-46d1-9605-1de304a38ddb": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "NOS NOUVEAUTÉS",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "nouveautes-1",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "outline",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
+        "quick_add": "none",
         "columns_mobile": "2",
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "heading_size": "h1",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
         "swipe_on_mobile": false,
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "82b133a4-d395-44c5-a2e6-3074262ce3c0": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Les dernières boxs",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "box-avec-accus-vendus-separement",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 0
       }
     }
   },
   "order": [
+    "slideshow_qaGxF7",
     "image_banner",
-    "rich_text",
+    "40a20d1e-dcd8-497b-84c0-65f6fce5a58d",
     "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "7179fa21-acea-46d1-9605-1de304a38ddb",
+    "82b133a4-d395-44c5-a2e6-3074262ce3c0"
   ]
 }

@@ -244,6 +244,13 @@ function fetchConfig(type = 'json') {
   };
 }
 
+function fetchGetConfig(type = 'json') {
+  return {
+    method: 'GET',
+    headers: { 'Content-Type': 'application/json', Accept: `application/${type}` },
+  };
+}
+
 /*
  * Shopify Common JS
  *

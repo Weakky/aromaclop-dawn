@@ -2,13 +2,97 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "settings": { "padding_top": 28, "padding_bottom": 28 }
+    },
+    "d6abd361-9ae8-4447-a236-c49e1404c730": {
+      "type": "collection-list",
+      "blocks": {
+        "template--18900911161681__d6abd361-9ae8-4447-a236-c49e1404c730-1683819404fb5e7512-0": {
+          "type": "featured_collection",
+          "settings": { "collection": "alfaliquid" }
+        },
+        "597e65d9-3921-4fc5-8c34-23b3f2171b72": {
+          "type": "featured_collection",
+          "settings": { "collection": "liquideo-1" }
+        },
+        "369c8ec1-23a5-482e-b6f8-3029fc9c4c00": {
+          "type": "featured_collection",
+          "settings": { "collection": "french-liquid" }
+        },
+        "258f8ad5-123e-40b5-b4c0-5da8a6909dc6": {
+          "type": "featured_collection",
+          "settings": { "collection": "halo" }
+        },
+        "27bdcdc2-995e-4cbc-b304-7f3c92c89579": {
+          "type": "featured_collection",
+          "settings": { "collection": "roykin" }
+        },
+        "template--18900911161681__d6abd361-9ae8-4447-a236-c49e1404c730-1683819404fb5e7512-1": {
+          "type": "featured_collection",
+          "settings": { "collection": "bordo2" }
+        },
+        "5b806b63-f484-495c-9636-947c95533eed": {
+          "type": "featured_collection",
+          "settings": { "collection": "vaponaute" }
+        },
+        "template--18900911161681__d6abd361-9ae8-4447-a236-c49e1404c730-1683819404fb5e7512-2": {
+          "type": "featured_collection",
+          "settings": { "collection": "flavor-hit" }
+        },
+        "50cc251a-9ff8-4393-a56c-be79fe595bcd": {
+          "type": "featured_collection",
+          "settings": { "collection": "e-tasty" }
+        },
+        "a174f748-a55c-4e6e-b8da-89a1f5e3c782": {
+          "type": "featured_collection",
+          "settings": { "collection": "vincent-dans-les-vapes" }
+        },
+        "50419b6e-efc5-459e-95a8-55308e956940": {
+          "type": "featured_collection",
+          "settings": { "collection": "vampire-vape" }
+        },
+        "3a5b9d68-3fee-44f7-8253-093e5d5099f3": {
+          "type": "featured_collection",
+          "settings": { "collection": "t-juice" }
+        },
+        "featured_collection_K8NUnK": {
+          "type": "featured_collection",
+          "settings": { "collection": "cookincloud" }
+        },
+        "featured_collection_yUEHhy": {
+          "type": "featured_collection",
+          "settings": { "collection": "liquidelab" }
+        }
+      },
+      "block_order": [
+        "template--18900911161681__d6abd361-9ae8-4447-a236-c49e1404c730-1683819404fb5e7512-0",
+        "597e65d9-3921-4fc5-8c34-23b3f2171b72",
+        "369c8ec1-23a5-482e-b6f8-3029fc9c4c00",
+        "258f8ad5-123e-40b5-b4c0-5da8a6909dc6",
+        "27bdcdc2-995e-4cbc-b304-7f3c92c89579",
+        "template--18900911161681__d6abd361-9ae8-4447-a236-c49e1404c730-1683819404fb5e7512-1",
+        "5b806b63-f484-495c-9636-947c95533eed",
+        "template--18900911161681__d6abd361-9ae8-4447-a236-c49e1404c730-1683819404fb5e7512-2",
+        "50cc251a-9ff8-4393-a56c-be79fe595bcd",
+        "a174f748-a55c-4e6e-b8da-89a1f5e3c782",
+        "50419b6e-efc5-459e-95a8-55308e956940",
+        "3a5b9d68-3fee-44f7-8253-093e5d5099f3",
+        "featured_collection_K8NUnK",
+        "featured_collection_yUEHhy"
+      ],
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+        "title": "Nos marques de liquides",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 6,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
-  "order": [
-    "main"
-  ]
+  "order": ["main", "d6abd361-9ae8-4447-a236-c49e1404c730"]
 }

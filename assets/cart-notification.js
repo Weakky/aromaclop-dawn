@@ -34,7 +34,7 @@ class CartNotification extends HTMLElement {
     removeTrapFocus(this.activeElement);
   }
 
-  renderContents(parsedState) {
+  renderContents(parsedState, openNotification = true) {
     this.cartItemKey = parsedState.key;
     this.getSectionsToRender().forEach((section) => {
       document.getElementById(section.id).innerHTML = this.getSectionInnerHTML(
@@ -44,14 +44,17 @@ class CartNotification extends HTMLElement {
     });
 
     if (this.header) this.header.reveal();
-    this.open();
+
+    if (openNotification) {
+      this.open();
+    }
   }
 
   getSectionsToRender() {
     return [
       {
         id: 'cart-notification-product',
-        selector: `[id="cart-notification-product-${this.cartItemKey}"]`,
+        selector: this.cartItemKey ? `[id="cart-notification-product-${this.cartItemKey}"]` : undefined,
       },
       {
         id: 'cart-notification-button',

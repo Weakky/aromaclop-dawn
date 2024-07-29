@@ -46,6 +46,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    text-transform: uppercase;
   }
 
   .list-menu--inline {
@@ -63,6 +64,11 @@
     line-height: calc(1 + 0.3 / var(--font-body-scale));
   }
 
+  .list-menu-top-level-link {
+    color: rgba(var(--color-foreground), 0.75);
+    text-decoration: none;
+  }
+
   .list-menu__item--link {
     text-decoration: none;
     padding-bottom: 1rem;
@@ -76,11 +82,31 @@
       padding-top: 0.5rem;
     }
   }
+
+  .aromaclop-menu-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .aromaclop-menu-image {
+    height: 40px;
+    width: 40px;
+    margin-right: 8px;
+    border-radius: 3px;
+    object-fit: contain;
+  }
+
+  .aromaclop-list {
+    display: grid;
+    gap: 0.5rem 0.8rem;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+  }
 </style>
 
 {%- style -%}
   .header {
-    padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
+    padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 2rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 2rem;
   }
 
   .section-header {
@@ -255,7 +281,7 @@
       {% render 'header-search', input_id: 'Search-In-Modal' %}
 
       {%- if shop.customer_accounts_enabled -%}
-        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
+        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset">
           {% render 'icon-account' %}
           <span class="visually-hidden">
             {%- liquid
